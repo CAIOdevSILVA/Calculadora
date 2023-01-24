@@ -19,6 +19,10 @@ class Calculator {
       this.currentNumberText.innerText = " ";
     })
   }
+  
+  Hello(){
+    console.log("ola mundo")
+  }
 
   deleteItem(){
     const deleteNumber = document.querySelector(".delete");
@@ -65,6 +69,8 @@ const calculator = new Calculator(previusNumber, currentNumber)
 
 for( const number of  numbers) {
   number.addEventListener("click", () => {
+    if(currentNumber.innerText == "" && number.innerText == ".") return
+    
     calculator.currentNumberText.innerText = `${currentNumber.innerText}${number.innerText}`;
   })
 }
