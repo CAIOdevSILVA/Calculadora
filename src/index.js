@@ -19,10 +19,6 @@ class Calculator {
       this.currentNumberText.innerText = " ";
     })
   }
-  
-  Hello(){
-    console.log("ola mundo")
-  }
 
   deleteItem(){
     const deleteNumber = document.querySelector(".delete");
